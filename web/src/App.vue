@@ -3,25 +3,37 @@
         <n-layout>
             <n-layout-header>
                 <n-space>
-                    <n-button type="tertiary" @mouseover="this.id = 0" @click="displayRelation">
-                        黄鹤楼
-                    </n-button>
-                    <n-button type="tertiary" @mouseover="this.id = 1" @click="displayRelation">
-                        武当山
-                    </n-button>
-                    <n-button type="tertiary" @mouseover="this.id = 2" @click="displayRelation">
-                        西湖
-                    </n-button>
-                    <n-button type="tertiary" @mouseover="this.id = 3" @click="displayRelation">
-                        莫干山
-                    </n-button>
+                    <n-tag v-if="tag[0]" type="success">
+                        {{this.feature[0]}}
+                    </n-tag>
+                    <n-tag v-if="tag[1]" type="success">
+                        {{this.feature[1]}}
+                    </n-tag>
+                    <n-tag v-if="tag[2]" type="success">
+                        {{this.feature[2]}}
+                    </n-tag>
+                    <n-tag v-if="tag[3]" type="success">
+                        {{this.feature[3]}}
+                    </n-tag>
+                    <n-tag v-if="tag[4]" type="success">
+                        {{this.feature[4]}}
+                    </n-tag>
+                    <n-tag v-if="tag[5]" type="success">
+                        {{this.feature[5]}}
+                    </n-tag>
+                    <n-tag v-if="tag[6]" type="success">
+                        {{this.feature[6]}}
+                    </n-tag>
+                    <n-tag v-if="tag[7]" type="success">
+                        {{this.feature[7]}}
+                    </n-tag>
                 </n-space>
             </n-layout-header>
             <n-layout-content content-style="padding: 0px;">
                 <div id="map" style="position:absolute;width:100%; height: 100%">
                 </div>
-                <div id="result" v-if="card">
-                    <n-card v-if="card" hoverable closable @close="this.card = false">
+                <div id="result" v-if="card" style="padding:10vh 25vw">
+                    <n-card v-if="card" hoverable closable @close="this.card = false" style="width:50vw;">
                         <template #header-extra>
                             <n-button-group>
                                 <n-button ghost @click="displayRelation"> result </n-button>
@@ -39,7 +51,7 @@
             <n-layout-footer>
                 <n-space justify="center">
                     <n-input v-model:value="value" type="text" placeholder="输入可能正确的景点......" />
-                    <n-button type="tertiary" @click="this.card = !this.card">
+                    <n-button type="tertiary" @click="submit">
                         提交
                     </n-button>
                 </n-space>
@@ -51,8 +63,11 @@
 import * as echarts from "echarts";
 import sample from "./assets/images/sample.png";
 var _sample = "image://" + sample;
-var myChart;
+import wudangshan from "./assets/images/wudangshan.png";
+var _wudangshan = "image://" + wudangshan;
 import { place as json } from "./data";
+import {ref} from "vue";
+var myChart;
 function displayMap() {
     var myChart;
     let newPormise = new Promise((resolve) => {
@@ -64,11 +79,12 @@ function displayMap() {
         const dom = document.getElementById("map");
         myChart = echarts.init(dom);
         myChart.on("click", function (params) {
-            console.log(params.data["name"]);
+            console.log(params.data["id"]);
+            displayRelation(params.data["id"]);
         })
         var datas = [];
-        for (let i = 0; i < 100; i++) {
-            datas.push({ name: `Node ${i}`, symbol: _sample, symbolSize: 70 });
+        for (let i = 0; i < 4; i++) {
+            datas.push({ id: i,name: `Node ${i}`, symbol: _wudangshan, symbolSize: [210,150] });
         }
         var option = {
             backgroundColor: "#fbeed3",
@@ -90,7 +106,7 @@ function displayMap() {
                     layout: "force",
                     roam: true,
                     force: {
-                        repulsion: 100
+                        repulsion: 700
                     },
                     label: {
                         show: false,
@@ -109,9 +125,15 @@ function displayMap() {
 }
 displayMap();
 export default {
+    setup()
+    {
+        return{
+            value: ref(null)
+        }
+    },
     data() {
         return {
-            tag: [false, false, false, false],
+            tag: [false, false, false, false,false,false,false],
             card: false,
             id: 0,
             feature: [],
@@ -120,8 +142,10 @@ export default {
         }
     },
     methods: {
-        displayRelation() {
+        displayRelation(id) {
             this.card = true;
+            this.id=id;
+            console.log(this.id);
             let mypromise = new Promise((resolve) => {
                 setTimeout(function () {
                     resolve();
@@ -154,6 +178,7 @@ export default {
                                 symbolSize: [100, 30],
                                 symbol: "rect",
                                 colors: "#66c18c",
+                                opacity :0.8
                             });
                             let flag = this.feature.indexOf(json[this.id][key]);
                             if (flag === -1) {
@@ -224,8 +249,21 @@ export default {
             dom.innerHTML = `
         <p>黄鹤楼，位于湖北省武汉市武昌区，地处蛇山之巅，濒临万里长江，为武汉市地标建筑；始建于三国吴黄武二年（223年），历代屡加重修，现存建筑以清代“同治楼”为原型设计，重建于1985年；因唐代诗人崔颢登楼所题《黄鹤楼》一诗而名扬四海。自古有“天下绝景”之美誉，与晴川阁、古琴台并称为“武汉三大名胜”，与湖南岳阳岳阳楼、江西南昌滕王阁并称为“江南三大名楼”，是“武汉十大景”之首、“中国古代四大名楼”之一、“中国十大历史文化名楼”之一，世称"天下江山第一楼"。</p>
         `;
+        },
+    submit()
+    {
+        let i;
+        for(i=0;i<4;i++)
+        {
+            if(this.value===json[i]["name"])
+            break;
         }
+        this.displayRelation(i);
+    }
     },
+    created () {   
+             window.displayRelation= this.displayRelation; 
+            }
 };
 </script>
   
