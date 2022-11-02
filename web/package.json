@@ -7,6 +7,8 @@
     "preview": "vite preview --port 4173"
   },
   "dependencies": {
+    "echarts": "^5.4.0",
+    "naive-ui": "^2.33.5",
     "vue": "^3.2.38"
   },
   "devDependencies": {
