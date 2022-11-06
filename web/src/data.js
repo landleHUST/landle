@@ -401,7 +401,7 @@ export const placeList=[
         introduction:"青海湖，位于青藏高原东北部、青海省境内，是中国最大的内陆湖。湖中有海心山、三块石、鸟岛、海西 山、沙岛五个形态各异的岛屿，山峦叠翠，景观独特。魏著名的地理学家郦道元，在《水经注》中就已如实写 过青海湖壮丽的景色。他写道：“海周七百五十余里，中有二山，东 西对峙，水色清绿，冬夏不枯不溢。自日月山望之，如黑云冉冉再来”。"
     },
     {
-        name:"纳木错",
+        name:"纳木措",
         feature:[28,36,41,59,70,120],
         introduction:"纳木措，位于西藏自治区中部，是西藏第二大湖泊，也是中国第三大的咸水湖。湖面海拔4718米，形状近似长方形，东西长70多千米，南北宽30多千米，面积约1961km²。“纳木措”为藏语，蒙古语名称为“腾格里海”，都是“天湖”之意。纳木措是西藏的“三大圣湖”之一。 纳木措是古象雄佛法雍仲本教的第一神湖，为著名的佛教圣地之一。 "
     },
@@ -539,13 +539,642 @@ export const menuList=[
     label: () => h(
         "a",
         {
-        href: "https://baike.baidu.com/item/%E7%99%BD%E9%A9%AC%E5%AF%BA/4680",
+        href: "https://baike.baidu.com/item/%E5%B2%B3%E9%98%B3%E6%A5%BC/42497",
         target: "_blank",
         rel: "noopenner noreferrer"
         },
-        "白马寺"
+        "岳阳楼"
     ),
     },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E7%99%BD%E9%A9%AC%E5%AF%BA/4680",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "白马寺"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E5%A4%A7%E6%98%AD%E5%AF%BA/532150",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "大昭寺"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E5%A1%94%E5%B0%94%E5%AF%BA/186785",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "塔尔寺"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E5%B0%91%E6%9E%97%E5%AF%BA/7702",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "少林寺"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E5%8D%97%E4%BA%AC%E5%A4%AB%E5%AD%90%E5%BA%99/510169",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "南京夫子庙"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E5%BE%BD%E5%B7%9E%E5%8F%A4%E5%9F%8E/3579124",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "徽州古城"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E9%98%86%E4%B8%AD%E5%8F%A4%E5%9F%8E/7504387",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "阆中古城"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E5%B9%B3%E9%81%A5%E5%8F%A4%E5%9F%8E/791",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "平遥古城"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E4%B8%BD%E6%B1%9F%E5%8F%A4%E5%9F%8E/304665",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "丽江古城"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E9%95%BF%E5%9F%8E/14251",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "长城"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E5%85%B5%E9%A9%AC%E4%BF%91/60649",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "秦始皇兵马俑"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E6%98%8E%E5%8D%81%E4%B8%89%E9%99%B5/303105",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "明十三陵"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E6%AE%B7%E5%A2%9F/3908528",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "安阳殷墟"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E4%BA%91%E5%86%88%E7%9F%B3%E7%AA%9F/1252",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "云冈石窟"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E9%BE%99%E9%97%A8%E7%9F%B3%E7%AA%9F/274",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "龙门石窟"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E8%8E%AB%E9%AB%98%E7%AA%9F/303038",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "莫高窟"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E5%A4%A7%E8%B6%B3%E7%9F%B3%E5%88%BB/209440",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "大足石刻"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E4%B9%90%E5%B1%B1%E5%A4%A7%E4%BD%9B/142192",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "乐山大佛"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E5%8C%97%E4%BA%AC%E6%95%85%E5%AE%AB/345415",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "故宫"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E5%8F%B0%E5%8C%97%E6%95%85%E5%AE%AB%E5%8D%9A%E7%89%A9%E9%99%A2/1164",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "台北故宫"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E5%B8%83%E8%BE%BE%E6%8B%89%E5%AE%AB/113399",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "布达拉宫"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E5%B5%A9%E5%B1%B1/5671",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "嵩山"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E6%B3%B0%E5%B1%B1/5447",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "泰山"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E5%8D%8E%E5%B1%B1/198",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "华山"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E8%A1%A1%E5%B1%B1/253407",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "衡山"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E6%81%92%E5%B1%B1/395558",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "恒山"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E9%9B%81%E8%8D%A1%E5%B1%B1/85904",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "雁荡山"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E9%BB%84%E5%B1%B1/9416",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "黄山"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E5%BA%90%E5%B1%B1/154518",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "庐山"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E6%AD%A6%E5%BD%93%E5%B1%B1/84549",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "武当山"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E4%BA%94%E5%8F%B0%E5%B1%B1/2678",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "五台山"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E6%99%AE%E9%99%80%E5%B1%B1/6618",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "普陀山"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E5%B3%A8%E7%9C%89%E5%B1%B1/2676",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "峨眉山"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E4%B9%9D%E5%8D%8E%E5%B1%B1/7008",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "九华山"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E9%9D%92%E6%B5%B7%E6%B9%96/113605",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "青海湖"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E7%BA%B3%E6%9C%A8%E6%8E%AA/123267",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "纳木措"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E8%8C%B6%E5%8D%A1%E7%9B%90%E6%B9%96/2072000",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "茶卡盐湖"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E5%96%80%E7%BA%B3%E6%96%AF%E6%B9%96/163512",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "喀纳斯湖"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E9%95%BF%E7%99%BD%E5%B1%B1%E5%A4%A9%E6%B1%A0/156873",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "长白山天池"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E8%A5%BF%E6%B9%96/4668821",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "西湖"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E9%84%B1%E9%98%B3%E6%B9%96/19437048",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "鄱阳湖"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E6%97%A5%E6%9C%88%E6%BD%AD/239702",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "日月潭"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E5%A3%B6%E5%8F%A3%E7%80%91%E5%B8%83/985",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "壶口瀑布"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E9%BB%84%E6%9E%9C%E6%A0%91%E7%80%91%E5%B8%83/136567",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "黄果树瀑布"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E5%BA%90%E5%B1%B1%E7%80%91%E5%B8%83/8616641",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "庐山瀑布"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E5%BE%B7%E5%A4%A9%E7%80%91%E5%B8%83/180256",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "德天瀑布"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E8%AF%BA%E6%97%A5%E6%9C%97%E7%80%91%E5%B8%83/1687238",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "诺日朗瀑布"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E9%9B%85%E9%B2%81%E8%97%8F%E5%B8%83%E5%A4%A7%E5%B3%A1%E8%B0%B7/715983",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "雅鲁藏布大峡谷"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E8%99%8E%E8%B7%B3%E5%B3%A1/392682",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "虎跳峡"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E9%95%BF%E6%B1%9F%E4%B8%89%E5%B3%A1/371964",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "长江三峡"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E6%80%92%E6%B1%9F%E5%A4%A7%E5%B3%A1%E8%B0%B7/606141",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "怒江大峡谷"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E6%BE%9C%E6%B2%A7%E6%B1%9F%E6%A2%85%E9%87%8C%E5%A4%A7%E5%B3%A1%E8%B0%B7/922406",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "澜沧江梅里大峡谷"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E5%A4%AA%E9%B2%81%E9%98%81%E5%A4%A7%E5%B3%A1%E8%B0%B7/1244183",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "太鲁阁大峡谷"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E7%91%9E%E9%87%91/817698",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "瑞金"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E5%BB%B6%E5%AE%89/467501",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "延安"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E4%BA%95%E5%86%88%E5%B1%B1/28334",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "井冈山"
+        ),
+    },
+    {
+        label: () => h(
+            "a",
+            {
+            href: "https://baike.baidu.com/item/%E5%98%89%E5%85%B4/29733",
+            target: "_blank",
+            rel: "noopenner noreferrer"
+            },
+            "嘉兴"
+        ),
+    },
+
+
   ];
 
 import tengwangge from "./assets/images/mapImage/滕王阁.png";
