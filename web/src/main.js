@@ -2,6 +2,6 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import './assets/main.css'
 import naive from "naive-ui"
+import "animate.css"
 
-const app = createApp(App)
-app.use(naive).mount('#app');
+createApp(App).use(naive).mount('#app')
