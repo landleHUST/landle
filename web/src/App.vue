@@ -290,6 +290,7 @@ import {placeList} from "./data"
 import {featureList} from "./data"
 import {gsap} from "gsap"
 import {menuList} from "./data"
+import {mapList} from "./data"
 var myChart;
 var correctId=7;
 let commentsList=[];
@@ -427,7 +428,7 @@ export default{
     {
       this.rule=false;
       this.mainPage=true;
-      displayMap(placeList);
+      displayMap(placeList,mapList,correctId);
     },
     toHomePage()
     {

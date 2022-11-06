@@ -548,9 +548,138 @@ export const menuList=[
     },
   ];
 
+import tengwangge from "./assets/images/mapImage/滕王阁.png";
+const _tengwangge="image://" + tengwangge; 
+import huanghelou from "./assets/images/mapImage/黄鹤楼.png";
+const _huanghelou="image://" + huanghelou; 
+import yueyanglou from "./assets/images/mapImage/岳阳楼.png";
+const _yueyanglou="image://" + yueyanglou; 
+import baimasi from "./assets/images/mapImage/白马寺.png";
+const _baimasi="image://" + baimasi; 
+import dazhaosi from "./assets/images/mapImage/大昭寺.png";
+const _dazhaosi="image://" + dazhaosi; 
+import taersi from "./assets/images/mapImage/塔尔寺.png";
+const _taersi="image://" + taersi; 
+import shaolinsi from "./assets/images/mapImage/少林寺.png";
+const _shaolinsi="image://" + shaolinsi; 
+import fuzimiao from "./assets/images/mapImage/夫子庙.png";
+const _fuzimiao="image://" + fuzimiao; 
+import huizhougucheng from "./assets/images/mapImage/徽州古城.png";
+const _huizhougucheng="image://" + huizhougucheng; 
+import langzhonggucheng from "./assets/images/mapImage/阆中古城.png";
+const _langzhonggucheng="image://" + langzhonggucheng; 
+import pingyaogucheng from "./assets/images/mapImage/平遥古城.png";
+const _pingyaogucheng="image://" + pingyaogucheng; 
+import lijiang from "./assets/images/mapImage/丽江.png";
+const _lijiang ="image://" + lijiang; 
+import changcheng from "./assets/images/mapImage/长城.png";
+const _changcheng="image://" + changcheng; 
+import bingmayong from "./assets/images/mapImage/兵马俑.png";
+const _bingmayong="image://" + bingmayong; 
+import mingshisanling from "./assets/images/mapImage/明十三陵.png"; 
+const _mingshisanling="image://" + mingshisanling; 
+import anyangyinxu from "./assets/images/mapImage/安阳殷墟.png";
+const _anyangyinxu="image://" + anyangyinxu; 
+import yungangshiku from "./assets/images/mapImage/云冈石窟.png";
+const _yungangshiku="image://" + yungangshiku; 
+import longmenshiku from "./assets/images/mapImage/龙门石窟.png";
+const _longmenshiku="image://" + longmenshiku; 
+import mogaoku from "./assets/images/mapImage/莫高窟.png";
+const _mogaoku="image://" + mogaoku; 
+import dazushike from "./assets/images/mapImage/大足石刻.png";
+const _dazushike="image://" + dazushike; 
+import leshandafo from "./assets/images/mapImage/乐山大佛.png";
+const _leshandafo="image://" + leshandafo; 
+import gugong from "./assets/images/mapImage/故宫.png";
+const _gugong="image://" + gugong; 
+import taibeigugong from "./assets/images/mapImage/台北故宫.png";
+const _taibeigugong="image://" + taibeigugong; 
+import budalagong from "./assets/images/mapImage/布达拉宫.png";
+const _budalagong="image://" + budalagong; 
+import songshan from "./assets/images/mapImage/嵩山.png";
+const _songshan="image://" + songshan; 
+import taishan from "./assets/images/mapImage/泰山.png";
+const _taishan="image://" + taishan; 
+import huashan from "./assets/images/mapImage/华山.png";
+const _huashan="image://" + huashan; 
+import hengshan1 from "./assets/images/mapImage/衡山.png";
+const _hengshan1="image://" + hengshan1; 
+import hengshan2 from "./assets/images/mapImage/恒山.png";
+const _hengshan2="image://" + hengshan2; 
+import yandangshan from "./assets/images/mapImage/雁荡山.png";
+const _yandangshan="image://" + yandangshan; 
+import huangshan from "./assets/images/mapImage/黄山.png";
+const _huangshan="image://" + huangshan; 
+import lushan from "./assets/images/mapImage/庐山.png"; 
+const _lushan="image://" + lushan; 
+import wudangshan from "./assets/images/mapImage/武当山.png";
+const _wudangshan="image://" + wudangshan; 
+import wutaishan from "./assets/images/mapImage/五台山.png";
+const _wutaishan="image://" + wutaishan; 
+import putuoshan from "./assets/images/mapImage/普陀山.png";
+const _putuoshan="image://" + putuoshan; 
+import emeishan from "./assets/images/mapImage/峨眉山.png";
+const _emeishan="image://" + emeishan; 
+import jiuhuashan from "./assets/images/mapImage/九华山.png";
+const _jiuhuashan="image://" + jiuhuashan; 
+import qinghaihu from "./assets/images/mapImage/青海湖.png";
+const _qinghaihu="image://" + qinghaihu; 
+import namucuo from "./assets/images/mapImage/纳木错.png";
+const _namucuo="image://" + namucuo; 
+import chakayanhu from "./assets/images/mapImage/茶卡盐湖.png";
+const _chakayanhu="image://" + chakayanhu; 
+import kenasihu from "./assets/images/mapImage/喀纳斯湖.png";
+const _kenasihu="image://" + kenasihu; 
+import changbaishantianchi from "./assets/images/mapImage/长白山天池.png";
+const _changbaishantianchi="image://" + changbaishantianchi; 
+import xihu from "./assets/images/mapImage/西湖.png";
+const _xihu="image://" + xihu; 
+import boyanghu from "./assets/images/mapImage/鄱阳湖.png";
+const _boyanghu="image://" + boyanghu; 
+import riyuetan from "./assets/images/mapImage/日月潭.png";
+const _riyuetan="image://" + riyuetan; 
+import hukoupubu from "./assets/images/mapImage/壶口瀑布.png";
+const _hukoupubu="image://" + hukoupubu; 
+import huangguoshupubu from "./assets/images/mapImage/黄果树瀑布.png";
+const _huangguoshupubu="image://" + huangguoshupubu; 
+import lushanpubu from "./assets/images/mapImage/庐山瀑布.png";
+const _lushanpubu="image://" + lushanpubu; 
+import detainpubu from "./assets/images/mapImage/德天瀑布.png";
+const _detianpubu="image://" + detainpubu; 
+import nuorilangpubu from "./assets/images/mapImage/诺日朗瀑布.png";
+const _buorilangpubu="image://" + nuorilangpubu; 
+import yaluzangbudaxiagu from "./assets/images/mapImage/雅鲁藏布大峡谷.png";
+const _yaluzangbudaxiagu="image://" + yaluzangbudaxiagu; 
+import hutiaoxia from "./assets/images/mapImage/虎跳峡.png";
+const _hutiaoxia="image://" + hutiaoxia; 
+import changjiangshanxia from "./assets/images/mapImage/长江三峡.png";
+const _changjiangshanxia="image://" + changjiangshanxia; 
+import nujiangdaxiagu from "./assets/images/mapImage/怒江大峡谷.png";
+const _nujiangdaxiagu="image://" + nujiangdaxiagu; 
+import lancangjiangdaxiagu from "./assets/images/mapImage/澜沧江梅里大峡谷.png";
+const _lancangjiangdaxiagu="image://" + lancangjiangdaxiagu; 
+import tailugedaxiagu from "./assets/images/mapImage/太鲁阁大峡谷.png";
+const _tailugedaxiagu="image://" + tailugedaxiagu; 
+import ruijin from "./assets/images/mapImage/瑞金.png";
+const _ruijin="image://" + ruijin; 
+import yanan from "./assets/images/mapImage/延安.png";
+const _yanan="image://" + yanan; 
+import jingangshan from "./assets/images/mapImage/井冈山.png";
+const _jingangshan="image://" + jingangshan; 
+import jiaxin from "./assets/images/mapImage/嘉兴.png";
+const _jiaxin="image://" + jiaxin; 
 
-
-
+export const mapList =[
+    _tengwangge,_huanghelou,_yueyanglou,_baimasi,_dazhaosi,_taersi,_shaolinsi,
+    _fuzimiao, _huizhougucheng ,_langzhonggucheng, _pingyaogucheng ,_lijiang, _changcheng,
+    _bingmayong, _mingshisanling, _anyangyinxu ,_yungangshiku, _longmenshiku,
+    _mogaoku, _dazushike, _leshandafo ,_gugong, _taibeigugong, _budalagong ,_songshan ,_taishan,
+  _huashan,  _hengshan1, _hengshan2, _yandangshan, _huangshan,
+  _lushan ,_wudangshan ,_wutaishan ,_putuoshan, _emeishan ,_jiuhuashan ,_qinghaihu, _namucuo,
+  _chakayanhu ,_kenasihu, _changbaishantianchi, _xihu, _boyanghu, _riyuetan, _hukoupubu ,_huangguoshupubu,
+  _lushanpubu ,_detianpubu, _buorilangpubu, _yaluzangbudaxiagu, _hutiaoxia, _changjiangshanxia
+  ,_nujiangdaxiagu ,_lancangjiangdaxiagu ,_tailugedaxiagu ,_ruijin,_yanan,_jingangshan,_jiaxin
+  ];
 
 
 

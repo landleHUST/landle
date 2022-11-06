@@ -1,5 +1,5 @@
 import * as echarts from "echarts"
-export const displayMap = (placeList) => {
+export const displayMap = (placeList,mapList,correctId) => {
     var myChart;
     let newPormise = new Promise((resolve) => {
         setTimeout(function () {
@@ -14,7 +14,19 @@ export const displayMap = (placeList) => {
         })
         var datas = [];
         for (let i = 0; i < placeList.length; i++) {
-            datas.push({ id: i,name: placeList[i]["name"], symbol: "rect", symbolSize: [210,150] });
+            if(i!==correctId)
+            {
+                if(i===25 || i===30 || i===24)
+                    datas.push({ id: i,name: placeList[i]["name"], symbol: mapList[i], symbolSize: 400});
+                else if(i===12 || i===23)
+                    datas.push({ id: i,name: placeList[i]["name"], symbol: mapList[i], symbolSize: 350});
+                else if(i===33 || i===35 || i===29)
+                    datas.push({ id: i,name: placeList[i]["name"], symbol: mapList[i], symbolSize: 300});
+                else if(i===46 || i===41 || i===31 || i===42)
+                    datas.push({ id: i,name: placeList[i]["name"], symbol: mapList[i], symbolSize: 250});
+                else
+                    datas.push({ id: i,name: placeList[i]["name"], symbol: mapList[i], symbolSize: 200});
+            }
         }
         var option = {
             backgroundColor: "#fbeed3",
@@ -33,7 +45,7 @@ export const displayMap = (placeList) => {
                     layout: "force",
                     roam: true,
                     force: {
-                        repulsion: 1500
+                        repulsion: 2000
                     },
                     label: {
                         show: false,
