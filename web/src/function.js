@@ -1,6 +1,5 @@
 import * as echarts from "echarts"
-export const displayMap = (placeList,mapList,correctId) => {
-    var myChart;
+export const displayMap = (map,placeList,mapList,correctId,clicked) => {
     let newPormise = new Promise((resolve) => {
         setTimeout(function () {
             resolve();
@@ -8,9 +7,16 @@ export const displayMap = (placeList,mapList,correctId) => {
     });
     newPormise.then(() => {
         const dom = document.getElementById("map");
-        myChart = echarts.init(dom);
-        myChart.on("click", function (params) {
+        if (map != null && map !== "" && map !== undefined) {
+            try {
+                map.dispose(); // 销毁
+            } catch (error) { }
+        }
+        map = echarts.init(dom);
+        map.on("click", function (params) {
             window.displayRelationM(params.data["id"]);
+            console.log(clicked);
+            clicked++;
         })
         var datas = [];
         for (let i = 0; i < placeList.length; i++) {
@@ -59,7 +65,7 @@ export const displayMap = (placeList,mapList,correctId) => {
                 },
             ],
         };
-        option && myChart.setOption(option);
+        option && map.setOption(option);
     });
 }
 
