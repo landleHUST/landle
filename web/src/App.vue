@@ -300,8 +300,7 @@ import {menuList} from "./data"
 import {mapList} from "./data"
 var myChart;
 var map;
-//var correctId=Math.round(Math.random()*60);
-var correctId=5;
+var correctId=Math.round(Math.random()*60);
 let commentsList=[];
 let click=0;
 function randomInRange(min, max) {
@@ -679,7 +678,7 @@ export default{
       this.rankList.push(click);
       click=0;
       this.rankList=this.rankList.sort();
-      //correctId=Math.round(Math.random()*60);
+      correctId=Math.round(Math.random()*60);
       this.correctFeatureList=[];
       console.log(this.rankList);
       this.card=false;
